@@ -1,0 +1,248 @@
+@import "../../assets/css/mixins";
+
+.sign_progressbar {
+  width: 654px;
+  position: absolute;
+  top: 340px;
+  left: 50%;
+  margin-left: -327px;
+
+  // background-color: yellow; // by91
+
+  .sign_progressbar_main {
+    position: relative;
+  }
+}
+
+.sign_progressbar .progressbar_line {
+  position: absolute;
+  width: 576px;
+  top: 50%;
+  height: 8px;
+  margin-top: -4px;
+}
+
+.sign_progressbar .progressbar_line * {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.sign_progressbar .progressbar_base {
+  background-color: #8699cc
+}
+
+.sign_progressbar .progressbar_curr {
+  background-color: #fff17f;
+  transition: width .6s ease;
+  z-index: 1;
+}
+
+.sign_progressbar .progressbar_flag {
+  position: relative;
+  z-index: 2;
+
+  ul {
+    /*display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-box-pack: justify;
+    -ms-box-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    box-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    width: 100%;*/
+
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    -moz-box-pack: justify;
+    -ms-box-pack: justify;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    box-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    width: 100%;
+  }
+}
+
+.sign_progressbar .progressbar_flag_item {
+  font-size: 26px;
+  text-align: center;
+  background-color: #38427d;
+  border: 4px solid #9bb2e6;
+  border-radius: 100px;
+  display: block;
+  color: #9bb2e6;
+  line-height: 36px;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.sign_progressbar .award_item i {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sign_progressbar .god_color {
+  i {
+    width: 86px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    left: 1px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.sign_progressbar .b_default i {
+  height: 68px;
+  top: 6px;
+  background-image: url(../../assets/images/b_box.png);
+}
+
+.sign_progressbar .b_disabled i {
+  height: 82px;
+  top: 0;
+  background-image: url(../../assets/images/b_box_disable.png);
+}
+
+.sign_progressbar .progressbar_flag_item_active {
+  background-color: #ec5715;
+  border-color: #fff17f;
+  color: #fff17f;
+}
+
+.sign_progressbar .award_item {
+  width: 86px;
+  height: 86px;
+  line-height: 98px;
+  text-align: center;
+}
+
+.sign_progressbar .progressbar_flag_item_active.award_item {
+  background-color: #b43700;
+}
+
+.sign_progressbar .progressbar_flag_item_active.b_disabled {
+  background-color: #b43700;
+  border-color: #fff17f;
+}
+
+.sign_progressbar .progressbar_flag_item_curr {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.sign_progressbar .b_opened i, .sign_progressbar .b_shake i {
+  animation-name: shake;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.sign_progressbar {
+  .sliver_color {
+    i {
+      left: 5px;
+      width: 78px;
+      background-size: cover;
+      display: inline-block;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  .sliver_color.b_default {
+    i {
+      top: 8px;
+      height: 63px;
+      background-image: url(../../assets/images/silver-default.png);
+    }
+  }
+  .sliver_color.b_disabled {
+    i {
+      top: 0;
+      height: 77px;
+      background-image: url(../../assets/images/silver-default-disable.png);
+    }
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(10deg);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(-10deg);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+.tooltip_popper {
+
+  /*****解决iphone5s的兼容问题start*****/
+  // position: absolute;
+  // left: 50%;
+  // top: 100px;
+  // transform: translate(-50%);
+  position: relative;
+  width: 560px;
+  margin: 5px auto;
+  /*****解决iphone5s的兼容问题end*****/
+
+  .tooltip_text {
+    line-height: 46px;
+    border: 2px solid #a2c3ff;
+    border-radius: 40px;
+    // max-width: 480px;
+    padding: 0 30px;
+    color: #a2c3ff;
+    text-align: center;
+    font-size: 25px;
+  }
+  i {
+    width: 21px;
+    height: 12px;
+    background: url("../../assets/images/arrow.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+  }
+}

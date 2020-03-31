@@ -1,21 +1,17 @@
 <template>
-  <div class="page">
-    测试页面
-  </div>
+  <div class="page"></div>
 </template>
 
 <script type="text/ecmascript-6">
 export default {
-  components: {
+    components: {
 
-  },
-  data () {
-    return {
+    },
+    data () {
+        return {
 
+        };
     }
-  }
-}
+};
 </script>
-
-<style lang="less" type="text/less">
-</style>
+<style lang="scss" scoped></style>
