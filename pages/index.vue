@@ -6,17 +6,17 @@
         nuxtdemo
       </h1>
       <h2 class="subtitle">
-        Welcome to the iView + Nuxt.js template
+        Welcome to the Nuxt.js Demo
       </h2>
       <div class="links">
         <Button type="primary" target="_blank" to="https://nuxtjs.org/">
-          Documentation
-        </Button>
-        <Button target="_blank" to="https://github.com/nuxt/nuxt.js">
-          GitHub
+          Nuxt服务端渲染
         </Button>
         <Button target="_blank" to="https://www.iviewui.com/">
-          iView
+          活动列表
+        </Button>
+        <Button target="_blank" to="https://www.iviewui.com/">
+          完成记录
         </Button>
       </div>
     </div>
@@ -42,8 +42,8 @@ export default {
   text-align: center;
 }
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
